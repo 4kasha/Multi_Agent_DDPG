@@ -108,7 +108,7 @@ Under the following definition of a **single score**,
 the environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
 The results of rewards are illustrated in the below figure with the average score (over 100 episodes). After achieving the goal score, the average score gradually increases while oscillating and reaches around **+1.6**.
-The number of episodes needed to solve this environment is **626 episodes** (see. [MARL_Results.ipynb](MARL_Results.ipynb)). Additionally, the performance of single DDPG algorithm is compared with that of MADDPG in this environment under the condition of same model structure and hyperparameter settings. (this can reproduced by `scores_ddpg.txt` in `scores` folder). 
+The number of episodes needed to solve this environment is **626 episodes** (see. [MARL_Results.ipynb](MARL_Results.ipynb)). Additionally, the performance of single DDPG algorithm is compared with that of MADDPG in this environment under the condition of same model structure and hyperparameter settings. (this can be reproduced by `scores_ddpg.txt` in `scores` folder). 
 In the case of DDPG each agent used only local information and trained the same actor network for their actions, and the experience was added to a shared replay buffer. 
 This result is consistent with the [original paper][ref3]. 
 
@@ -126,15 +126,16 @@ The left one is just after achieving the goal score (0.5) and the right one is t
 
 ## Ideas for Future Work
 
-### Interested in the following algorithms
+### Interested in the following algorithm and topics
 
 - [Mean Field Multi-Agent Reinforcement Learning](https://arxiv.org/pdf/1802.05438.pdf)
+- [OpenAI Five](https://blog.openai.com/openai-five/)
 - [Curiosity-driven Exploration by Self-supervised Prediction](https://pathak22.github.io/noreward-rl/)
 
 ## Reference
 
 - [D. Silver, et al. "Deterministic Policy Gradient Algorithms"][ref1], ["Supplementary Material"][ref1-2] 
-- [Timothy P. Lillicrap, et al. "CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING"][ref2]
+- [T. P. Lillicrap, et al. "CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING"][ref2]
 - [R. Lowe, et al. "Multi-agent actor-critic for mixed cooperative-competitive environments"][ref3]
 - [OpenAI : Multi-Agent Deep Deterministic Policy Gradient (MADDPG)][ref4] 
 
