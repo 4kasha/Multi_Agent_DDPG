@@ -14,8 +14,8 @@ Partially observable Markov games is defined as follows.
 
 - <img src="https://latex.codecogs.com/gif.latex?N"/> : Number of agents
 - <img src="https://latex.codecogs.com/gif.latex?S"/> : Set of states 
-- <img src="https://latex.codecogs.com/gif.latex?A_1,A_2, \cdots ,A_N"/> : Set of actions for each agent
-- <img src="https://latex.codecogs.com/gif.latex?O_1,O_2, \cdots,O_N"/> : Set of observations for each agent
+- <img src="https://latex.codecogs.com/gif.latex?A_1,A_2,\cdots,A_N"/> : Set of actions for each agent
+- <img src="https://latex.codecogs.com/gif.latex?O_1,O_2,\cdots,O_N"/> : Set of observations for each agent
 - <img src="https://latex.codecogs.com/gif.latex?\mathbf{\pi}_{\theta_i}:&space;O_i&space;\times&space;A_i&space;\mapsto&space;[0,1]"/> : Stochastic policy for each agent
 - <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}:&space;S\times&space;A_1\times&space;A_2&space;\times\cdots\times&space;A_N&space;\mapsto&space;S"/> : State transition function that gives next state following the above policy
 - <img src="https://latex.codecogs.com/gif.latex?r_i:S\times&space;A_i\mapsto\mathbb{R}"/> : Reward given to each agent
@@ -30,7 +30,7 @@ Such non-stationary environment is an obstacle for the straightforward use of **
 Multi-Agent Deep Deterministic Policy Gradient (MADDPG) algorithm is literally based on the [DDPG][ref2] algorithm ([see more details](https://github.com/4kasha/ContinuousControl_DDPG/blob/master/REPORT.md)).
 To resolve the problem of non-stationarity mentioned above, the MADDPG algorithm adopts the framework of centralized training with decentralized execution (see the below fig).
 
-<img src="./media/overview.png" width="240">
+<img src="./media/overview.png" width="260">
 
 At the centralized training phase, the critics for evaluating the each agent policy use not only local information but observations and actions from other agents through the reply buffer.
 However these extra information from other agents is not given at the execution phase. 
