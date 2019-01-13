@@ -38,7 +38,7 @@ In other words, each agent makes their decision via only their own observations.
 This is the one of extension of ordinary actor-critic policy gradient methods where the critic is augmented with extra information about the policies of other agents.
 
 Additionally such multiple critics allow each agent to have the different reward functions.
-As is mentioned in [original paper][ref3], this framework can be applied not only to cooperative interaction but to competitive or mixed interaction involving both physical and communicative behavior. To be summarized the pseudocode for MADDPG algorithm is as follows.
+As is mentioned in the [original paper][ref3], this framework can be applied not only to cooperative interaction but to competitive or mixed interaction involving both physical and communicative behavior. To be summarized the pseudocode for MADDPG algorithm is as follows.
 
 <img src="./media/algorithm.png" width="600" label="compare">
 
