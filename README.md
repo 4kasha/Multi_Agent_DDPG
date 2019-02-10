@@ -10,12 +10,12 @@ In this project, you will work with the [Tennis](https://github.com/Unity-Techno
 
 ![Trained Agent][image1]
 
-The goal of this environment is to bounce the ball back and forth between the two agents, without letting the ball hit the ground.
+The goal of this environment is to bounce the ball back and forth between the two agents without letting the ball hit the ground.
 A reward of **+0.1** is provided for the agent who hits the ball over the net. On the other hand, A reward of **-0.01** is provided for the agent whose ball hits the ground or out of bounds. 
 
-The observation space consists of **8 variables corresponding to the position and velocity of the ball and racket**. Each agent receives its own, local observation. **Two continuous actions in the range of [-1,1] are available**, corresponding to the velocity toward (or away from) the net, and jumping. 
+The observation space consists of **8 variables corresponding to the position and velocity of the ball and racket**. Each agent receives its own local observation. **Two continuous actions in the range of [-1,1] are available**, corresponding to the velocity toward (or away from) the net and jumping. 
 
-The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
+The task is episodic and in order to solve the environment your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
 
 ## Dependencies
 
